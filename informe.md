@@ -78,32 +78,32 @@ Verificar la persistencia de datos en un contenedor PostgreSQL al utilizar volú
 🔸 Parte 1: Base de datos sin volumen
 
 1. Crear un contenedor PostgreSQL con el nombre `server_db1`.
-![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/1.jpg)
+![Timg1](https://github.com/Edissonfierro/volumenes/blob/main/1.jpg)
 
 
 2. Conectar un administrador de base de datos (como DataGrip o TablePlus) al contenedor `server_db1`.
-![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/2.jpg)
+![img2](https://github.com/Edissonfierro/volumenes/blob/main/2.jpg)
 
 3. Crear una base de datos llamada `test`.
-![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/3.jpg)
+![img3](https://github.com/Edissonfierro/volumenes/blob/main/3.jpg)
 
 4. En la base de datos `test`, crear una tabla llamada `customer` con los campos: `id`, `fullname` y `status`.
-![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/4.jpg)
+![img4](https://github.com/Edissonfierro/volumenes/blob/main/4.jpg)
 
 5. Insertar al menos un registro en la tabla `customer`.
-![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/5.jpg)
+![img5](https://github.com/Edissonfierro/volumenes/blob/main/5.jpg)
 
 6. Detener y eliminar el contenedor `server_db1`.
-![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/6.jpg)
+![img6](https://github.com/Edissonfierro/volumenes/blob/main/6.jpg)
 
 7. Volver a crear el contenedor PostgreSQL con el mismo nombre `server_db1`.
-![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/7.jpg)
+![img7](https://github.com/Edissonfierro/volumenes/blob/main/7.jpg)
 
 8. Conectarse nuevamente desde el administrador de base de datos.
-![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/8.jpg)
+![img8](https://github.com/Edissonfierro/volumenes/blob/main/8.jpg)
 
 9. Verificar que la base de datos `test` ya no existe, demostrando que los datos no se han conservado.
-![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/9.jpg)
+![img9](https://github.com/Edissonfierro/volumenes/blob/main/9.jpg)
 
 
 🔸 Parte 2: Base de datos con volumen
@@ -147,6 +147,10 @@ El resultado esperado es ver que, sin volúmenes, los datos en PostgreSQL se pie
 
 Ramos, M. (2023, 11 de septiembre). Uso de volúmenes para gestionar datos persistentes con Docker Compose. Kinsta. https://kinsta.com/es/blog/volumenes-docker-compose/
 
-MOTORBA. (n.d.). Diferencia entre motor y gestor de base de datos. MOTORBA. Recuperado el 20 de abril de 2025, de https://motorba.com.ar/diferencia-entre-motor-y-gestor-de-base-de-datos/
 
-IESGN. (2021). Ciclo de vida de un contenedor Docker. IESGN. Recuperado el 20 de abril de 2025, de https://iesgn.github.io/curso_docker_2021/sesion6/ciclo_vida.html
+
+MOTORBA. (n.d.). Diferencia entre motor y gestor de base de datos. MOTORBA. https://motorba.com.ar/diferencia-entre-motor-y-gestor-de-base-de-datos/
+
+
+
+IESGN. (2021). Ciclo de vida de un contenedor Docker. IESGN. https://iesgn.github.io/curso_docker_2021/sesion6/ciclo_vida.html
