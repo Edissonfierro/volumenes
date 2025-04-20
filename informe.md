@@ -75,38 +75,39 @@ Verificar la persistencia de datos en un contenedor PostgreSQL al utilizar volú
 
 ## 8. Procedimiento
 
-🔸 Parte 1: Base de datos sin volumen
+## Parte 1: Base de datos sin volumen
 
 1. Crear un contenedor PostgreSQL con el nombre `server_db1`.
-![Timg1](https://github.com/Edissonfierro/volumenes/blob/main/1.jpg)
+![img01](https://github.com/Edissonfierro/volumenes/blob/main/1.jpg)
 
 
 2. Conectar un administrador de base de datos (como DataGrip o TablePlus) al contenedor `server_db1`.
-![img2](https://github.com/Edissonfierro/volumenes/blob/main/2.jpg)
+![img02](https://github.com/Edissonfierro/volumenes/blob/main/2.jpg)
 
 3. Crear una base de datos llamada `test`.
-![img3](https://github.com/Edissonfierro/volumenes/blob/main/3.jpg)
+![img03](https://github.com/Edissonfierro/volumenes/blob/main/3.jpg)
 
 4. En la base de datos `test`, crear una tabla llamada `customer` con los campos: `id`, `fullname` y `status`.
-![img4](https://github.com/Edissonfierro/volumenes/blob/main/4.jpg)
+![img04](https://github.com/Edissonfierro/volumenes/blob/main/4.jpg)
 
 5. Insertar al menos un registro en la tabla `customer`.
-![img5](https://github.com/Edissonfierro/volumenes/blob/main/5.jpg)
+![img05](https://github.com/Edissonfierro/volumenes/blob/main/5.jpg)
 
 6. Detener y eliminar el contenedor `server_db1`.
-![img6](https://github.com/Edissonfierro/volumenes/blob/main/6.jpg)
+
+![img06](https://github.com/Edissonfierro/volumenes/blob/main/6.jpg)
 
 7. Volver a crear el contenedor PostgreSQL con el mismo nombre `server_db1`.
-![img7](https://github.com/Edissonfierro/volumenes/blob/main/7.jpg)
+![img07](https://github.com/Edissonfierro/volumenes/blob/main/7.jpg)
 
 8. Conectarse nuevamente desde el administrador de base de datos.
-![img8](https://github.com/Edissonfierro/volumenes/blob/main/8.jpg)
+![img08](https://github.com/Edissonfierro/volumenes/blob/main/8.jpg)
 
 9. Verificar que la base de datos `test` ya no existe, demostrando que los datos no se han conservado.
-![img9](https://github.com/Edissonfierro/volumenes/blob/main/9.jpg)
+![img09](https://github.com/Edissonfierro/volumenes/blob/main/9.jpg)
 
 
-🔸 Parte 2: Base de datos con volumen
+## Parte 2: Base de datos con volumen
 
 1. Crear un volumen en Docker con el comando:
 ![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/01.jpg)
