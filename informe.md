@@ -78,6 +78,9 @@ Verificar la persistencia de datos en un contenedor PostgreSQL al utilizar volú
 🔸 Parte 1: Base de datos sin volumen
 
 1. Crear un contenedor PostgreSQL con el nombre `server_db1`.
+(https://github.com/Edissonfierro/volumenes/blob/main/1.jpg)
+
+
 2. Conectar un administrador de base de datos (como DataGrip o TablePlus) al contenedor `server_db1`.
 3. Crear una base de datos llamada `test`.
 4. En la base de datos `test`, crear una tabla llamada `customer` con los campos: `id`, `fullname` y `status`.
