@@ -8,9 +8,33 @@ Persistencia de Datos en Contenedores PostgreSQL con y sin Volúmenes en Docker
 ## 3. Fundamentos  
 **¿Qué es un volumen en Docker?**
 
+Según Marcia ramos en el repositorio de kinsta, los volúmenes en Docker son esenciales para almacenar datos persistentes generados por contenedores efímeros, asegurando que los datos no se pierdan al eliminar o actualizar un contenedor. A diferencia de los montajes vinculados, los volúmenes están desacoplados del sistema de archivos del contenedor, lo que facilita su portabilidad, gestión y migración entre diferentes hosts y contenedores. Además, permiten realizar copias de seguridad y compartir datos entre contenedores, siendo compatibles con diversos controladores de almacenamiento para adaptarse a diferentes necesidades.
 
+**¿Cuál es la diferencia entre un gestor de base de datos y un motor de base de datos?**
 **Tiempo estimado:**
-**Tiempo estimado:**
+
+Según el artículo de MOTORBA, la diferencia entre un motor y un gestor de base de datos radica en sus roles dentro del sistema:
+
+Gestor de Base de Datos (DBMS): Es el software que facilita la creación, administración y acceso a las bases de datos. Ofrece una interfaz que permite gestionar los datos de manera sencilla, incluyendo tareas como definir la estructura de la base de datos, manipular los datos y controlar el acceso y la seguridad.
+
+Motor de Base de Datos: Este componente es el encargado de las operaciones fundamentales como el almacenamiento, la recuperación y la gestión de los datos. Se considera el "corazón" del DBMS, pues realiza las tareas técnicas que permiten que la base de datos funcione correctamente, como almacenar y recuperar información de manera eficiente.
+
+**¿Cuál es el ciclo de vida de un contenedor Docker?**
+
+El ciclo de vida de una aplicación en Docker consta de seis pasos clave:
+
+Desarrollo de la aplicación: Se crea el código fuente de la aplicación, como una página web estática, que será el núcleo de la aplicación que se ejecutará en el contenedor.
+
+Creación de la imagen Docker: Usando un archivo Dockerfile, se define la imagen base, se instalan los paquetes necesarios y se copia el código fuente al contenedor para que esté listo para ejecutarse.
+
+Pruebas en el entorno de desarrollo: Se construye la imagen y se ejecuta un contenedor para asegurarse de que la aplicación funcione correctamente antes de pasar a producción.
+
+Distribución de la imagen: Una vez que la imagen está lista, se sube a un registro como Docker Hub, lo que facilita su acceso y despliegue en otros entornos.
+
+Implantación en producción: La imagen se descarga del registro y se ejecuta en el entorno de producción, asegurando que la aplicación esté disponible para los usuarios finales.
+
+Modificación y actualización: Si es necesario realizar cambios o mejoras en la aplicación, se actualiza el código fuente y el Dockerfile, se reconstruye la imagen y se repiten los pasos para desplegar la nueva versión.
+
 
 
 ## 4. Conocimientos previos
@@ -57,4 +81,8 @@ El resultado esperado es ver que, sin volúmenes, los datos en PostgreSQL se pie
 
 ## 10. Bibliografía
 
+Ramos, M. (2023, 11 de septiembre). Uso de volúmenes para gestionar datos persistentes con Docker Compose. Kinsta. https://kinsta.com/es/blog/volumenes-docker-compose/
 
+MOTORBA. (n.d.). Diferencia entre motor y gestor de base de datos. MOTORBA. Recuperado el 20 de abril de 2025, de https://motorba.com.ar/diferencia-entre-motor-y-gestor-de-base-de-datos/
+
+IESGN. (2021). Ciclo de vida de un contenedor Docker. IESGN. Recuperado el 20 de abril de 2025, de https://iesgn.github.io/curso_docker_2021/sesion6/ciclo_vida.html
