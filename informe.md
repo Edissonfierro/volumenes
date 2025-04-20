@@ -123,7 +123,7 @@ Verificar la persistencia de datos en un contenedor PostgreSQL al utilizar volú
 5. Crear la tabla `customer` con los campos: `id`, `fullname` y `status`.
 ![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/05.jpg)
 
-6. Insertar al menos un registro en la tabla.
+6. Insertar al menos un registro en la tabla. 
 
 ![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/06jpg)
 
@@ -141,7 +141,8 @@ Verificar la persistencia de datos en un contenedor PostgreSQL al utilizar volú
 ## 9. Resultados esperados:
 
 El resultado esperado es ver que, sin volúmenes, los datos en PostgreSQL se pierden cuando se elimina el contenedor, pero al usar volúmenes, los datos permanecen intactos incluso después de eliminar y recrear el contenedor.
-
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/9.jpg)
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/09.jpg)
 ## 10. Bibliografía
 
 Ramos, M. (2023, 11 de septiembre). Uso de volúmenes para gestionar datos persistentes con Docker Compose. Kinsta. https://kinsta.com/es/blog/volumenes-docker-compose/
