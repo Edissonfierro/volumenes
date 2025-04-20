@@ -82,14 +82,28 @@ Verificar la persistencia de datos en un contenedor PostgreSQL al utilizar volú
 
 
 2. Conectar un administrador de base de datos (como DataGrip o TablePlus) al contenedor `server_db1`.
-3. Crear una base de datos llamada `test`.
-4. En la base de datos `test`, crear una tabla llamada `customer` con los campos: `id`, `fullname` y `status`.
-5. Insertar al menos un registro en la tabla `customer`.
-6. Detener y eliminar el contenedor `server_db1`.
-7. Volver a crear el contenedor PostgreSQL con el mismo nombre `server_db1`.
-8. Conectarse nuevamente desde el administrador de base de datos.
-9. Verificar que la base de datos `test` ya no existe, demostrando que los datos no se han conservado.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/2.jpg)
 
+3. Crear una base de datos llamada `test`.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/3.jpg)
+
+4. En la base de datos `test`, crear una tabla llamada `customer` con los campos: `id`, `fullname` y `status`.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/4.jpg)
+
+5. Insertar al menos un registro en la tabla `customer`.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/5.jpg)
+
+6. Detener y eliminar el contenedor `server_db1`.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/6.jpg)
+
+7. Volver a crear el contenedor PostgreSQL con el mismo nombre `server_db1`.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/7.jpg)
+
+8. Conectarse nuevamente desde el administrador de base de datos.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/8.jpg)
+
+9. Verificar que la base de datos `test` ya no existe, demostrando que los datos no se han conservado.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/9.jpg)
 
 
 🔸 Parte 2: Base de datos con volumen
