@@ -124,6 +124,7 @@ Verificar la persistencia de datos en un contenedor PostgreSQL al utilizar volú
 ![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/05.jpg)
 
 6. Insertar al menos un registro en la tabla.
+
 ![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/06jpg)
 
 7. Detener y eliminar el contenedor `server_db2`.
