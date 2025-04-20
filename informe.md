@@ -75,6 +75,35 @@ Verificar la persistencia de datos en un contenedor PostgreSQL al utilizar volú
 
 ## 8. Procedimiento
 
+🔸 Parte 1: Base de datos sin volumen
+
+1. Crear un contenedor PostgreSQL con el nombre `server_db1`.
+2. Conectar un administrador de base de datos (como DataGrip o TablePlus) al contenedor `server_db1`.
+3. Crear una base de datos llamada `test`.
+4. En la base de datos `test`, crear una tabla llamada `customer` con los campos: `id`, `fullname` y `status`.
+5. Insertar al menos un registro en la tabla `customer`.
+6. Detener y eliminar el contenedor `server_db1`.
+7. Volver a crear el contenedor PostgreSQL con el mismo nombre `server_db1`.
+8. Conectarse nuevamente desde el administrador de base de datos.
+9. Verificar que la base de datos `test` ya no existe, demostrando que los datos no se han conservado.
+
+
+
+🔸 Parte 2: Base de datos con volumen
+
+1. Crear un volumen en Docker con el comando:
+2. Crear un contenedor PostgreSQL con el nombre `server_db2`, asociando el volumen creado.
+3. Conectarse al contenedor con DataGrip o TablePlus.
+4. Crear la base de datos `test`.
+5. Crear la tabla `customer` con los campos: `id`, `fullname` y `status`.
+6. Insertar al menos un registro en la tabla.
+7. Detener y eliminar el contenedor `server_db2`.
+8. Volver a crear el contenedor `server_db2` usando el volumen `pgdata` nuevamente.
+9. Conectarse desde el administrador de base de datos y verificar que la base de datos `test` y los registros han persistido.
+
+
+
+
 ## 9. Resultados esperados:
 
 El resultado esperado es ver que, sin volúmenes, los datos en PostgreSQL se pierden cuando se elimina el contenedor, pero al usar volúmenes, los datos permanecen intactos incluso después de eliminar y recrear el contenedor.
