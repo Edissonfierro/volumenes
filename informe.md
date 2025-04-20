@@ -109,15 +109,31 @@ Verificar la persistencia de datos en un contenedor PostgreSQL al utilizar volú
 🔸 Parte 2: Base de datos con volumen
 
 1. Crear un volumen en Docker con el comando:
-2. Crear un contenedor PostgreSQL con el nombre `server_db2`, asociando el volumen creado.
-3. Conectarse al contenedor con DataGrip o TablePlus.
-4. Crear la base de datos `test`.
-5. Crear la tabla `customer` con los campos: `id`, `fullname` y `status`.
-6. Insertar al menos un registro en la tabla.
-7. Detener y eliminar el contenedor `server_db2`.
-8. Volver a crear el contenedor `server_db2` usando el volumen `pgdata` nuevamente.
-9. Conectarse desde el administrador de base de datos y verificar que la base de datos `test` y los registros han persistido.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/01.jpg)
 
+2. Crear un contenedor PostgreSQL con el nombre `server_db2`, asociando el volumen creado.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/02.jpg)
+
+3. Conectarse al contenedor con DataGrip o TablePlus.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/03.jpg)
+
+4. Crear la base de datos `test`.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/04.jpg)
+
+5. Crear la tabla `customer` con los campos: `id`, `fullname` y `status`.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/05.jpg)
+
+6. Insertar al menos un registro en la tabla.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/06jpg)
+
+7. Detener y eliminar el contenedor `server_db2`.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/07.jpg)
+
+8. Volver a crear el contenedor `server_db2` usando el volumen `pgdata` nuevamente.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/08.jpg)
+
+9. Conectarse desde el administrador de base de datos y verificar que la base de datos `test` y los registros han persistido.
+![Texto alternativo](https://github.com/Edissonfierro/volumenes/blob/main/09.jpg)
 
 
 
