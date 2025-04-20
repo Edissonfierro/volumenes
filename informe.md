@@ -4,7 +4,7 @@
 Persistencia de Datos en Contenedores PostgreSQL con y sin Volúmenes en Docker
 
 ## 2. Tiempo de duración  
-**Tiempo estimado:** 30 minutos
+**Tiempo estimado:** 180 minutos
 ## 3. Fundamentos  
 **¿Qué es un volumen en Docker?**
 
